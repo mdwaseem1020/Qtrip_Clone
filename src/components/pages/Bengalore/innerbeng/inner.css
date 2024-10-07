@@ -1,0 +1,32 @@
+#dix{
+    border: 1px solid black;
+    width: 900px;
+    height: 100%;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+.ni{
+    font-size: 50px;
+    margin: 20px 0px 0px 30px;
+}
+.nii{
+    position: relative;
+    top:-10px;
+    margin: 20px 0px 0px 30px;
+    font-size: 27px;
+}
+#src{
+    width:850px;
+    height: 500px;
+    position: relative;
+    left:16px
+}
+.niii{
+    font-size: 29px;
+    margin: 20px 0px 0px 20px;
+}
+.in{
+    width: 870px;
+    position: relative;
+    left:18px
+}

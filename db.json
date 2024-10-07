@@ -1,0 +1,16 @@
+{
+    "students": [
+        {
+            "id": "1",
+            "name": "gneshwar",
+            "course": "Python Full Stack",
+            "Duration": "3 months"
+        },
+        {
+            "id": "2",
+            "name": "akram",
+            "course": "Java Full Stack",
+            "Duration": "4 months"
+        }
+    ]
+}
