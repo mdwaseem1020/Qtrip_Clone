@@ -2,7 +2,8 @@ import React from "react";
 import Navbar from "../Home/navbar";
 import { useState,useEffect } from "react";
 import GoaCard from "./goacard";
-import "../Bengalore/child.css"
+import "../Bengalore/child.css";
+import { Link } from "react-router-dom";
 
 export default function Goa() {
   const [data, setData] = useState([]);
@@ -30,9 +31,9 @@ export default function Goa() {
       </div>
       <div id='intel'style={{paddingLeft:"70px"}}>
         {data.map((x, index) => (
-          <GoaCard
+         <Link to ={`/Goa/content`}> <GoaCard
           src={x.image} h3={x.name} h5={x.costPerHead} h4={x.duration} p={x.p} h6={x.duration} s={x.category}
-          />
+          /></Link>
         ))}
       </div>
     </>
