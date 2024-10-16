@@ -2,6 +2,7 @@ import React,{Component} from "react";
 import Navbar from "../Home/navbar";
 import { useState,useEffect } from "react";
 import GoaCard from "../Bengalore/Card2";
+import { Link } from "react-router-dom";
 
 
 export default function Kolkatta() {
@@ -30,9 +31,9 @@ export default function Kolkatta() {
       </div>
       <div id='intel'>
         {data.map((x, index) => (
-          <GoaCard
+          <Link to ={`/kolkatta/content`}><GoaCard
           src={x.image} h3={x.name} h5={x.costPerHead} h4={x.duration} p={x.p} h6={x.duration} s={x.category}
-          />
+          /></Link>
         ))}
       </div>
     </>
