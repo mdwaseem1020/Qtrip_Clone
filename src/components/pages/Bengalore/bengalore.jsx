@@ -3,6 +3,7 @@ import Navbar from '../Home/navbar.jsx';
 import Card2 from './Card2';
 import "../Bengalore/bengalore.css"
 import "../Bengalore/child.css"
+import { Link } from "react-router-dom";
 
 export default  function Benguluru() 
 {
@@ -40,7 +41,7 @@ export default  function Benguluru()
                <div id='intel'>
                {data.map(x=>{
                 return (
-                  <Card2 src={x.image} h3={x.name} h5={x.costPerHead} h4={x.duration} p={x.p} h6={x.duration} s={x.category}/>
+                  <Link to ={`/bengalore/content`}><Card2 src={x.image} h3={x.name} h5={x.costPerHead} h4={x.duration} p={x.p} h6={x.duration} s={x.category}/></Link>
                 )
               })}
             </div>
